@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		639EE57522306AA900417D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639EE57422306AA900417D3E /* AppDelegate.swift */; };
-		639EE57722306AA900417D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639EE57622306AA900417D3E /* ViewController.swift */; };
 		639EE57A22306AA900417D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639EE57822306AA900417D3E /* Main.storyboard */; };
 		639EE57C22306AAA00417D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639EE57B22306AAA00417D3E /* Assets.xcassets */; };
 		639EE57F22306AAA00417D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639EE57D22306AAA00417D3E /* LaunchScreen.storyboard */; };
+		639EE58822307A5700417D3E /* WelcomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639EE58722307A5700417D3E /* WelcomeBoardViewController.swift */; };
+		639EE58A22307F3B00417D3E /* RegisterBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639EE58922307F3B00417D3E /* RegisterBoardViewController.swift */; };
+		639EE58C2230EBC900417D3E /* LogInBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639EE58B2230EBC900417D3E /* LogInBoardViewController.swift */; };
+		639EE58E2230EC3900417D3E /* ChatBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639EE58D2230EC3900417D3E /* ChatBoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		639EE57122306AA900417D3E /* CSC371FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC371FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639EE57422306AA900417D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		639EE57622306AA900417D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		639EE57922306AA900417D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		639EE57B22306AAA00417D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639EE57E22306AAA00417D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		639EE58022306AAA00417D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639EE58722307A5700417D3E /* WelcomeBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBoardViewController.swift; sourceTree = "<group>"; };
+		639EE58922307F3B00417D3E /* RegisterBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBoardViewController.swift; sourceTree = "<group>"; };
+		639EE58B2230EBC900417D3E /* LogInBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInBoardViewController.swift; sourceTree = "<group>"; };
+		639EE58D2230EC3900417D3E /* ChatBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				639EE57422306AA900417D3E /* AppDelegate.swift */,
-				639EE57622306AA900417D3E /* ViewController.swift */,
 				639EE57822306AA900417D3E /* Main.storyboard */,
-				639EE57B22306AAA00417D3E /* Assets.xcassets */,
+				639EE58D2230EC3900417D3E /* ChatBoardViewController.swift */,
+				639EE58B2230EBC900417D3E /* LogInBoardViewController.swift */,
+				639EE58922307F3B00417D3E /* RegisterBoardViewController.swift */,
+				639EE58722307A5700417D3E /* WelcomeBoardViewController.swift */,
 				639EE57D22306AAA00417D3E /* LaunchScreen.storyboard */,
+				639EE57B22306AAA00417D3E /* Assets.xcassets */,
 				639EE58022306AAA00417D3E /* Info.plist */,
 			);
 			path = CSC371FinalProject;
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639EE57722306AA900417D3E /* ViewController.swift in Sources */,
+				639EE58A22307F3B00417D3E /* RegisterBoardViewController.swift in Sources */,
+				639EE58E2230EC3900417D3E /* ChatBoardViewController.swift in Sources */,
+				639EE58C2230EBC900417D3E /* LogInBoardViewController.swift in Sources */,
+				639EE58822307A5700417D3E /* WelcomeBoardViewController.swift in Sources */,
 				639EE57522306AA900417D3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
