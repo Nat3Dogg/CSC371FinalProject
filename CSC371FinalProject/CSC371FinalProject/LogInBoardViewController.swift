@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class LogInBoardViewController: UIViewController {
 
@@ -17,8 +19,32 @@ class LogInBoardViewController: UIViewController {
     
     @IBAction func loginPressed(_ sender: UIButton) {
         
-        // Log user in
+        // Show loading screen
+        SVProgressHUD.show()
         
+        // Log user in
+        Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
+            
+            // If an error has occured on login
+            // Add alert box pop up after
+            if error != nil {
+                print(error!)
+            } else {
+                // Created the users account
+                // Make alert pop-up for this
+                print("Login Successful")
+                // Dismiss loading screen
+                SVProgressHUD.dismiss()
+                
+                self.performSegue(withIdentifier: "segueToMessageBoard", sender: self)
+            }
+        }
+        
+        // Look up how to log users in using Google
+        
+    }
+    @IBAction func returnPressed(_ sender: UITextField) {
+        sender.resignFirstResponder()
     }
     
     override func viewDidLoad() {
